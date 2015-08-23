@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Raphael Test</title>
+        <style type="text/css">
+            
+        </style>
+    </head>
+    <body>
+        <div id="my-canvas" style="width:140px;padding:0px;margin:0px;">
+        </div>
+        <!--  -->
+        <!--some html doms-->
+        <!--some scripts-->
+        <script type="text/javascript" src="raphael.js">
+        </script>
+        <script type="text/javascript">
+            var paper = Raphael("my-canvas", 650, 400);
+            /*paper.image("1.jpg",300,300,200,100);
+            paper.animate({
+            transform: "r90t100,0s1.5"
+            }, 1000,"bounce");*/
+            for (var i = 0, i <
+    5, i++) {
+    paper.circle(10 + 15 * i,
+    10, 10)
+    .attr({fill: "#000"})
+    .data("i", i)
+    .click(function () {
+    alert(this.data("i"));
+    });
+    }
+        </script>
+    </body>
+</html>

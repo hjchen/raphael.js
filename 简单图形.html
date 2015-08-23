@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="my-canvas" style="width:140px;padding:0px;margin:0px;"></div>
+
+<script type="text/javascript" src="raphael.js"></script>
+<script type="text/javascript">
+	var elm = document.getElementById('my-canvas');
+	var paper = Raphael(elm,1000,1000);
+	var coloredCircle = paper.circle(35,25,20).attr({ //绘制圆形
+	"fill":"#17A9C6", 
+	"stroke":"#2A6570", 
+	"stroke-width":2
+	});
+	var rect = paper.rect(35,25,170,100,20).attr({ //绘制矩形
+	"fill":"#17A9C6", //filling with background color 
+	"stroke":"#2A6570", // border color of the rectangle 
+	"stroke-width":2 // the width of the border
+	});
+	var ellipse = paper.ellipse(500,500,170,100).attr({ 
+	"fill":"#17A9C6", // background color of the ellipse 
+	"stroke":"#2A6570", // ellipse's border color 
+	"stroke-width":2 // border width
+	});
+</script>
+</body>
+</html>
